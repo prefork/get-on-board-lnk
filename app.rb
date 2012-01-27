@@ -1,6 +1,10 @@
 require 'sinatra'
 require 'json'
-require './otvia'
+#require './otvia'
+
+helpers do
+  require './lib/otvia'
+end
 
 get '/' do
   "nothing"
